@@ -44,3 +44,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .section{padding-block:44px}.collection-grid{margin-top:26px}.story{padding-block:30px 45px}
 }
 @media(max-width:380px){.product-grid,.product-grid.featured{grid-template-columns:1fr}.product-image img{max-height:300px}.product-card p{font-size:16px}.footer-grid{grid-template-columns:1fr}.hero h1{font-size:36px}}
+.scene-image{display:block;width:100%;height:auto;aspect-ratio:auto;border-radius:8px;}
+
