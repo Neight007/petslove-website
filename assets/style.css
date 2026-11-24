@@ -109,3 +109,58 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .reading-content .section-intro{color:var(--ink);margin-bottom:28px}
 .reading-contact{border:0;background:#e9eff1;border-radius:12px;padding:30px 36px;margin:8px 0 48px}
 @media(max-width:700px){.reading-section-heading{display:flex;align-items:baseline;gap:12px;padding-left:12px;margin-bottom:28px}.chapter-number{margin:0;flex:none}.reading-section-heading h2{max-width:none}.reading-contact{padding:24px 20px;margin-bottom:36px}.reading-section .reading-row h3{font-size:16px}.reading-section .reading-row p{font-size:16px;line-height:1.7}}
+/* Home: imagery first on phones, clear section groups and quiet subheadings. */
+.home-page .hero{padding-block:24px 48px;gap:5%}
+.home-page .hero-copy{order:-1}
+.home-page .hero h1{font-size:clamp(42px,4.6vw,66px);line-height:1.12}
+.home-page .hero .lead{font-size:17px;max-width:350px}
+.home-section{padding-block:56px}
+.home-heading{margin-bottom:28px;max-width:700px}
+.home-heading .eyebrow{color:#98643e;margin-bottom:12px;font-size:12px;letter-spacing:.12em}
+.home-heading h2{font-size:36px;line-height:1.2;margin:0 0 12px}
+.home-heading>p:last-child{margin:0;font-size:16px}
+.home-collections .collection-grid{margin:0;gap:22px}
+.home-collections .collection{background:#fffdf9;border-radius:12px;padding:20px;display:block}
+.home-collections .collection>div{border-radius:8px;padding:0}
+.home-collections .collection .eyebrow{display:none}
+.home-collections .collection h3{font-size:25px;margin:18px 0 7px}
+.home-collections .collection p{font-size:15px;margin-bottom:0}
+.home-products{background:#eee8df}
+.home-products .product-card h3{font-size:18px;font-weight:600}
+.home-products .product-card>p{display:none}
+.home-products .product-image{border-radius:10px}
+.home-products .card-meta{font-size:12px;letter-spacing:0;text-transform:none}
+.home-brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.home-brand-grid article{background:#fffdf9;border-radius:12px;overflow:hidden}
+.home-brand-grid img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.home-brand-grid article>div{padding:24px}
+.home-brand-grid h3{font-size:21px;font-weight:600;margin:0 0 10px}
+.home-brand-grid p{font-size:16px;margin-bottom:18px}
+.home-contact{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:32px;background:#e9eff1;border-radius:12px;margin-bottom:56px}
+.home-contact h2{font-size:30px;margin:0 0 10px}.home-contact p{margin:0;font-size:16px}
+@media(max-width:700px){
+ .home-page .hero{display:flex;flex-direction:column;gap:20px;padding-block:10px 32px}
+ .home-page .hero-copy{order:0;padding:0;width:100%}
+ .home-page .lifestyle-carousel{width:100%;padding-top:18px}
+ .home-page .love-badge{width:88px;height:88px;top:-7px;right:6px}
+ .home-page .hero h1{font-size:34px;line-height:1.12;margin:0 0 12px;max-width:360px}
+ .home-page .hero h1 br{display:block}.home-page .hero .lead{font-size:16px;line-height:1.6;margin:0;max-width:none}
+ .home-page .actions{margin-top:16px}
+ .home-page .hero-slide figcaption{padding:10px 0 4px;font-size:12px}
+ .home-page .carousel-controls{padding-top:0;gap:3px;justify-content:space-between;flex-wrap:nowrap}
+ .home-page .carousel-controls>button{font-size:12px;padding:6px 8px;min-height:44px}
+ .home-section{padding-block:34px}.home-heading{margin-bottom:22px}
+ .home-heading h2{font-size:28px}.home-heading .eyebrow{font-size:11px;margin-bottom:10px}
+ .home-collections .collection-grid{gap:12px}
+ .home-collections .collection{display:grid;grid-template-columns:100px minmax(0,1fr);column-gap:16px;padding:14px;align-items:center}
+ .home-collections .collection>div{grid-row:1/3}
+ .home-collections .collection img{width:100px;aspect-ratio:1;object-fit:contain}
+ .home-collections .collection h3{font-size:23px;margin:0 0 6px;align-self:end}
+ .home-collections .collection p{font-size:14px;line-height:1.5;align-self:start}
+ .home-products .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}
+ .home-products .product-card h3{font-size:16px}.home-products .card-meta{font-size:11px}
+ .home-brand-grid{grid-template-columns:1fr;gap:20px}.home-brand-grid article>div{padding:20px}
+ .home-brand-grid h3{font-size:20px}
+ .home-contact{padding:24px;flex-direction:column;align-items:flex-start;margin-bottom:34px}
+ .home-contact h2{font-size:27px}
+}
