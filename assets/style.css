@@ -164,3 +164,28 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .home-contact{padding:24px;flex-direction:column;align-items:flex-start;margin-bottom:34px}
  .home-contact h2{font-size:27px}
 }
+/* Distinct full-width chapters; never constrain content to a fixed height. */
+.home-page .home-section{padding-block:72px;position:relative}
+.home-collections{background:#fffdf9}
+.home-collections .collection{background:#f2ece3}
+.home-products{background:#e5edf0}
+.home-brand{background:#f0e6d9}
+.home-heading{padding-left:20px;border-left:4px solid #b87945;margin-bottom:36px}
+.home-heading .eyebrow{font-weight:700;letter-spacing:.16em}
+.home-next{display:flex;align-items:center;justify-content:center;gap:16px;font-size:13px;min-height:44px;margin:40px auto 0;color:var(--muted)}
+.home-page .hero>.home-next{grid-column:1/-1;margin-top:0}
+.home-contact{margin-top:48px}
+@media(max-width:700px){
+ .home-page .hero{min-height:calc(100svh - 100px);padding-bottom:24px;gap:20px}
+ .home-page .hero>.home-next{margin-top:auto;padding-top:16px}
+ .home-page .home-section{min-height:100svh;padding:44px 0 24px;display:flex;flex-direction:column;justify-content:center;gap:28px;scroll-margin-top:0}
+ .home-page .home-section>.wrap{flex:none}
+ .home-heading{padding-left:16px;margin-bottom:30px}
+ .home-heading h2{font-size:30px;line-height:1.18}
+ .home-heading .eyebrow{font-size:12px;margin-bottom:12px}
+ .home-next{margin:0 auto;flex:none}
+ .home-collections .collection-grid{gap:16px}
+ .home-brand-grid{gap:24px}
+ .home-brand-grid article>div{padding:18px 20px}
+ .home-contact{margin-top:32px}
+}
